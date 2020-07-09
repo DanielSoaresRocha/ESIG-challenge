@@ -74,7 +74,7 @@ ul li .graphicBar p:before{
 }
 
 /* Engranagem */
-ul li .graphicBar .gearBackfround{
+.graphicBar .gearBackfround{
     width: 50px;
     height: 40px;
     background: linear-gradient(to right,#d90814, #78100d);
@@ -84,7 +84,7 @@ ul li .graphicBar .gearBackfround{
     border-radius: 4px;
 }
 
-ul li .graphicBar .gearBackfround img{
+.graphicBar .gearBackfround img{
      width: 16px;
      height: 16px;
  }
@@ -98,6 +98,36 @@ ul li .graphicBar .gearBackfround img{
     margin-top: 70px;
     left: -70px;
     background-color: transparent;
+}
+
+/* Tabela */
+.containerHome .container{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    max-width: 2000px;
+}
+
+tr td .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerHome .container p{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+tr td:nth-child(n +1) .container p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+td span{
+    font-size: 14px;
 }
 
 

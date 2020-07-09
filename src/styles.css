@@ -60,6 +60,7 @@ nav img{
     height: 30px;
     align-self: center;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .containerHome header{
