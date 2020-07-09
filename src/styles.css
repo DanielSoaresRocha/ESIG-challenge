@@ -7,7 +7,7 @@
 .containerHome{
     display: flex;
     flex-direction: column;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 nav{
     display: flex;
