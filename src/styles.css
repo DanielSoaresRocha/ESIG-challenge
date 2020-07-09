@@ -7,10 +7,12 @@
 .containerHome{
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
 }
 nav{
     display: flex;
     flex-direction: column;
+    align-self: start;
     position: fixed;
     width: 60px;
     height: 100%;
@@ -18,7 +20,27 @@ nav{
     left: 0px;
     background: linear-gradient(#d90814, #78100d);
     text-align: center;
+    transition: 0.5s ease;
+    z-index: 200;
 }
+
+/* Animação menu lateral */
+
+.containerHome input{
+    display: none;
+}
+
+.containerHome input:checked ~ nav{
+    width: 300px;
+}
+
+nav label{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*---------*/
 
 nav .burguer{
     width: 100%;
@@ -55,12 +77,16 @@ nav .burguer span:before{
     top: 10px;
 }
 
-nav img{
+nav .icons img{
     width: 30px;
     height: 30px;
     align-self: center;
     margin-top: 30px;
     cursor: pointer;
+}
+
+nav .icons{
+    max-width: 60px;
 }
 
 .containerHome header{
@@ -115,11 +141,5 @@ nav img{
     padding: 0px;
     font-size: 12px;
 }
-
-
-
-
-
-
 
 
