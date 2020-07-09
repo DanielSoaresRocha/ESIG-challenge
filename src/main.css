@@ -90,7 +90,7 @@ ul li .graphicBar p:before{
  }
 
  .gearBackfround:hover img{
-     animation: 2s animateGear infinite ease;
+     animation: 2s animateGear infinite linear;
  }
 
  @keyframes animateGear{
