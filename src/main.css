@@ -55,7 +55,6 @@ ul li .graphicBar{
     flex-direction: row;
     position: relative;
     justify-content: space-between;
-    cursor: pointer;
 }
 
 ul li .graphicBar p{
@@ -74,7 +73,7 @@ ul li .graphicBar p:before{
 }
 
 /* Engranagem */
-.graphicBar .gearBackfround{
+.gearBackfround{
     width: 50px;
     height: 40px;
     background: linear-gradient(to right,#d90814, #78100d);
@@ -82,11 +81,24 @@ ul li .graphicBar p:before{
     flex-direction: row;
     justify-content: center;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.graphicBar .gearBackfround img{
+.gearBackfround img{
      width: 16px;
      height: 16px;
+ }
+
+ .gearBackfround:hover img{
+     animation: 2s animateGear infinite ease;
+ }
+
+ @keyframes animateGear{
+     0%{
+         transform: rotate(0deg);
+     }100%{
+         transform: rotate(360deg);
+     }
  }
 
 /* Layouth do gráfico */
@@ -101,6 +113,25 @@ ul li .graphicBar p:before{
 }
 
 /* Tabela */
+
+.containerHome .tableBar{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.containerHome .tableBar p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+}
+
+.containerHome .tableBar .gearBackfround img{
+    margin-top: 13px;
+}
+
 .containerHome .container{
     width: 100%;
     margin: 0px;
