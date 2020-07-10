@@ -34,6 +34,10 @@ ul li .info p{
     font-size: 25px;
 }
 
+ul li .info span{
+    color: rgb(8, 95, 8);
+}
+
 ul li img{
     width: 60px;
     align-self: center;
