@@ -33,11 +33,11 @@ google.charts.setOnLoadCallback(drawChartArea);
 function drawChartArea () {
     var data = google.visualization.arrayToDataTable([
         ['Year', 'Laptops', 'Headsets', 'Monitors', 'Phones'],
-        ['2013', 50, 250, 420, 570],
-        ['2014', 150, 460, 650, 870],
-        ['2015', 250, 350, 420, 520],
-        ['2016', 130, 540, 765, 999],
-        ['2017', 20, 250, 250, 250]
+        ['2016', 500, 2500, 4200, 5700],
+        ['2017', 1500, 4600, 6500, 8700],
+        ['2018', 2500, 3500, 4200, 5200],
+        ['2019', 1300, 5400, 7650, 9990],
+        ['2020', 200, 2500, 2500, 2500]
     ]);
 
     var options = {

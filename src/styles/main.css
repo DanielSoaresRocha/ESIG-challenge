@@ -35,7 +35,9 @@ ul li .info p{
 }
 
 ul li .info span{
-    color: rgb(8, 95, 8);
+    /*color: rgb(8, 95, 8);*/
+    color: green;
+    font-weight: bolder;
 }
 
 ul li img{
