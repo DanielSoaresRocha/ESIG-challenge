@@ -106,10 +106,18 @@ ul li .graphicBar p:before{
      }
  }
 
-/* Layouth do gráfico */
-.graphic{
+/* Layouth dos gráfico gráficos */
+.graphicPizza{
     width: 500px; 
     height: 400px; 
+    position: absolute;
+    margin-top: 70px;
+    left: -70px;
+}
+
+.graphicLine{
+    width: 950px;
+    height: 400px;
     position: absolute;
     margin-top: 70px;
     left: -70px;
