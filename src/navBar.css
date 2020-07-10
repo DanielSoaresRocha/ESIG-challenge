@@ -22,50 +22,8 @@ nav{
     text-align: center;
     transition: 0.5s ease;
     z-index: 100;
+    max-width: 60%;
 }
-
-/* Animação menu lateral */
-
-.containerHome input{
-    display: none;
-}
-
-.containerHome input:checked ~ nav:before{
-    display: block;
-    animation: backdrop 0.5s ease;
-}
-
-@keyframes backdrop{
-    0%{
-        margin-left: 0px;
-        opacity: 0;
-    }100%{
-        margin-left: 300px;
-        opacity: 1;
-    }
-}
-
-.containerHome input:checked ~ nav{
-    width: 300px;
-    max-width: 70%;
-}
-
-.containerHome input:checked ~ nav .icons a{
-    display: block;
-}
-
-.containerHome input:checked ~ nav .icons{
-    grid-template-columns: 1fr 1fr;
-    justify-content: start;
-}
-
-nav label{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-
-/*---------*/
 
 nav .burguer{
     width: 100%;
@@ -74,6 +32,7 @@ nav .burguer{
     display: flex;
     justify-content: center;
     cursor: pointer;
+    z-index: 500;
 }
 
 nav .burguer span{
@@ -104,33 +63,41 @@ nav .burguer span:before{
 
 nav .icons{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 0px;
     row-gap: 0px;
     max-width: 150px;
 }
 
 nav .icons img{
+    margin-left: 15px;
     width: 30px;
     height: 30px;
-    margin: auto;
     margin-top: 30px;
     cursor: pointer;
 }
+
 nav .icons a{
-    display: none;
     margin-top: 30px;
     text-decoration: none;
+    visibility: hidden;
 }
 
-nav:before{
-    content: '';
+.containerHome .backdrop{
     background-color: rgba(71, 71, 71, 0.41);
     position: fixed;
-    margin-left: 300px;
     width: 100vw;
     height: 100vh;
+    z-index: 50;
     display: none;
 }
 
+.expand{
+    width: 300px;
+}
+
+.navigateVisible{
+    visibility: visible;
+
+}
 
