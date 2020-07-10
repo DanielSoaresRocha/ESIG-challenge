@@ -64,6 +64,7 @@ function backdropListener () {
         nav.classList.remove('expand')
         navShow = !navShow
         navigate.forEach(element => element.style.visibility = 'hidden')
+        document.getElementById("checkbox").checked = false;
     });
 
     // expandir nav

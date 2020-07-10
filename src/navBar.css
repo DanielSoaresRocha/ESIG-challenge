@@ -9,6 +9,34 @@
     flex-direction: column;
     overflow: hidden;
 }
+
+/*Animation menu */
+
+.containerHome label{
+    width: 100%;
+}
+
+.containerHome input{
+    display: none;
+}
+
+.containerHome input:checked ~ nav label .burguer span::before{
+    transform: rotate(360deg);
+    top:-2px;
+}
+
+.containerHome input:checked ~ nav label .burguer span::after{
+    transform: rotate(448deg);
+    top:-2px;
+}
+
+.containerHome input:checked ~ nav label .burguer span{
+    transform: rotate(407deg);
+}
+
+
+/*----------*/
+
 nav{
     display: flex;
     flex-direction: column;
@@ -42,6 +70,7 @@ nav .burguer span{
     position: relative;
     height: 2px;
     margin-top: 30px;
+    transition: 1s;
 }
 
 nav .burguer span:after,nav .burguer span:before{
@@ -51,6 +80,7 @@ nav .burguer span:after,nav .burguer span:before{
     position: absolute;
     left: -2px;
     display: block;
+    transition: 1s;
 }
 
 nav .burguer span:after{
