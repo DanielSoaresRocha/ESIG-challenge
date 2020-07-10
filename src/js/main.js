@@ -57,8 +57,7 @@ async function incrementNumbers () {
         } else if (currentSales + 1 <= qtdSales) {
             currentSales++
         }
-
-        totalSales.innerHTML = `${currentSales}`
+        totalSales.innerHTML = `${currentSales.toLocaleString('en-US')}`
 
         // TOTAL INCOME
         if (currentIncome + 1000 <= qtdIncome) {
@@ -78,7 +77,11 @@ async function incrementNumbers () {
         } else if (currentViews + 1 <= qtdViews) {
             currentViews++
         }
-        totalViews.innerHTML = `${currentViews}`
+        totalViews.innerHTML = `${currentViews.toLocaleString('en-US')}`
+
+        // if everyone reaches the limit
+        if ((currentSales >= qtdSales) && (currentIncome >= qtdIncome) && (currentViews >= qtdViews))
+            break
 
         await sleep(0.001)
     }
