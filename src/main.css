@@ -1,6 +1,5 @@
 main{
     padding: 40px;
-    border: 1px solid black;
     margin-left: 60px;
 }
 
@@ -142,6 +141,14 @@ ul li .graphicBar p:before{
 tr td .container{
     display: flex;
     flex-direction: column;
+}
+
+table{
+    border: 1px solid black;
+}
+
+table button{
+    width: 100px;
 }
 
 .containerHome .container p{

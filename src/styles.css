@@ -186,4 +186,34 @@ nav:before{
     font-size: 12px;
 }
 
+.containerHome footer{
+    width: 100%;
+    padding: 10px;
+    z-index: 100;
+    background: linear-gradient(to right, #78100d, #d90814);
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerHome footer p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+}
+
+.containerHome footer p:nth-child(1){
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.containerHome footer p:nth-child(2){
+    margin-left: 15px;
+}
+
 
