@@ -20,6 +20,7 @@ ul li{
     height: 120px;
     border: 2px solid gray;
     padding: 20px;
+    background-color: rgb(248, 247, 247);
     /*box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);*/
 }
 
@@ -140,6 +141,10 @@ ul li .graphicBar p:before{
 tr td .container{
     display: flex;
     flex-direction: column;
+}
+
+tr{
+    background-color: rgb(248, 247, 247);
 }
 
 table{
