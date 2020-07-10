@@ -18,6 +18,7 @@ function drawChart () {
         pieStartAngle: 287, // rotação do gráfico
         pieSliceText: 'value', // tipo do valor que será mostrado
         fontSize: 16,
+        backgroundColor: 'transparent',
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -42,6 +43,7 @@ function drawChartArea () {
     var options = {
         //title: 'Company Performance',
         legend: { position: 'top', maxLines: 3, textStyle: { color: 'blue', fontSize: 16 } }, // legendas no topo
+        backgroundColor: 'transparent',
     };
 
     var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));

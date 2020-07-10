@@ -1,6 +1,7 @@
 main{
     padding: 40px;
     margin-left: 60px;
+    background: #F0F0F5;
 }
 
 ul{
@@ -105,10 +106,8 @@ ul li .graphicBar p:before{
     width: 500px; 
     height: 400px; 
     position: absolute;
-    z-index: -1;
     margin-top: 70px;
     left: -70px;
-    background-color: transparent;
 }
 
 /* Tabela */
