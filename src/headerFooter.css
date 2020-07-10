@@ -21,6 +21,7 @@
     flex-direction: row;
     align-items: center;
     text-align: end;
+    margin-right: 20px;
 }
 
 .containerHome header .info .person{

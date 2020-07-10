@@ -81,6 +81,8 @@ nav .icons a{
     margin-top: 30px;
     text-decoration: none;
     visibility: hidden;
+    color: white;
+    text-align: left;
 }
 
 .containerHome .backdrop{
