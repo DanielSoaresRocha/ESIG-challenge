@@ -74,11 +74,27 @@ nav .icons img{
     width: 30px;
     height: 30px;
     margin-top: 30px;
-    cursor: pointer;
+}
+
+nav .icons img:hover{
+    animation: animate 0.3s linear;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }25%{
+        transform: rotate(20deg);
+    }50%{
+        transform: rotate(-20deg);
+    }75%{
+        transform: rotate(0deg);
+    }
 }
 
 nav .icons a{
     margin-top: 30px;
+    margin-left: 20px;
     text-decoration: none;
     visibility: hidden;
     color: white;
@@ -98,8 +114,15 @@ nav .icons a{
     width: 300px;
 }
 
-.navigateVisible{
-    visibility: visible;
+.animate{
+    animation: menu 2s;
+}
 
+@keyframes menu{
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
 }
 

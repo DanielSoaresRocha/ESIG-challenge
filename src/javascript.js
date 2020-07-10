@@ -62,6 +62,7 @@ function backdropListener () {
     backdrop.addEventListener("click", () => {
         backdrop.style.display = 'none'
         nav.classList.remove('expand')
+        navShow = !navShow
         navigate.forEach(element => element.style.visibility = 'hidden')
     });
 
