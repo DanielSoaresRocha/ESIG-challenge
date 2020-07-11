@@ -156,3 +156,10 @@ nav .icons a{
     }
 }
 
+@media(max-width:420px){
+    nav .icons img{
+        width: 25px;
+        height: 25px;
+        margin-top: 20px;
+    }
+}
