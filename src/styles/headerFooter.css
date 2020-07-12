@@ -82,3 +82,34 @@
 .containerHome footer p:nth-child(2){
     margin-left: 15px;
 }
+
+@media(max-width:520px){
+    .containerHome header .info .names p{
+        font-size: 14px;
+    }
+    .containerHome header .info .names span{
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    .containerHome header .info .person{
+        margin-right: 0px;
+    }
+
+}
+
+@media(max-width:420px){
+    #img{
+        transform: translateX(-60px);
+        animation: main 1s;
+    }
+
+    @keyframes main {
+        0%{
+            transform: translate(0px);
+        }100%{
+            transform: translate(-60px);
+        }
+    }
+}

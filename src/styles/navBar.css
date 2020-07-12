@@ -162,4 +162,9 @@ nav .icons a{
         height: 25px;
         margin-top: 20px;
     }
+
+    nav{
+        transform: translateX(-100%);
+    }
+
 }

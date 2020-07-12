@@ -2,6 +2,7 @@ main{
     padding: 40px;
     margin-left: 60px;
     background: #F0F0F5;
+    transition: transform 1s;
 }
 
 ul{
@@ -68,6 +69,7 @@ ul li .graphicBar p{
     font-size: 25px;
     margin: 0px;
     padding: 0px;
+    align-self: center;
 }
 
 ul li .graphicBar p:before{
@@ -139,6 +141,7 @@ ul li .graphicBar p:before{
     margin: 0px;
     padding: 0px;
     font-size: 25px;
+    align-self: center;
 }
 
 .containerHome .tableBar .gearBackfround img{
@@ -234,16 +237,29 @@ td span{
     }
 }
 
-/*@media(max-width:930px){
+@media(max-width:930px){
+    .containerHome main .tableBar p{
+        font-size: 20px;
+        
+    }
     .containerHome main .container:nth-child(3){
-        min-width: 300px;
+        width: 100%;
         overflow: scroll;
     }
 
-    .containerHome main table{
-        width: 100%;
+    .containerHome main .container table tr td p{
+        font-size: 15px;
+        font-weight: bolder;
     }
-}*/
+
+    .containerHome main .container table tr td .container p{
+        font-weight: normal;
+    }
+
+    .containerHome main table{
+        min-width: 1000px;
+    }
+}
 
 @media(max-width:680px){
     .containerHome main ul{
@@ -269,12 +285,20 @@ td span{
     }
 
     .graphicPizza{
-    width: 400px; 
-    height: 300px; 
-    margin-left: 10px;
-
-    position: absolute;
+        width: 400px; 
+        height: 300px; 
+        margin-left: 10px;
+    }
 }
+
+/* Esconder menu */
+@media(max-width:420px){
+    .containerHome main{
+        width: 100%;
+        transform: translateX(-60px);
+    }
+
+   
 }
 
 
