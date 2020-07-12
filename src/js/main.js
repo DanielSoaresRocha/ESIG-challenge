@@ -88,3 +88,36 @@ async function incrementNumbers () {
 }
 
 incrementNumbers()
+
+
+// A função debounce não permitirá que um callback seja usado mais de uma vez por um determinado período de tempo.
+function debounce (func, wait, immediate) {
+    var timeout;
+    return function () {
+        var context = this, args = arguments;
+        var later = function () {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+};
+
+let scroolWindowPosition = 0;
+function showNav () {
+    const nav = document.getElementById('nav')
+    const currentScrollPosition = window.scrollY
+
+    window.scrollY > scroolWindowPosition ?
+        nav.style.transform = 'translateX(-100%)' : nav.style.transform = 'translateX(0px)'
+    scroolWindowPosition = currentScrollPosition
+}
+
+if (window.innerWidth < 420) {
+    window.addEventListener('scroll', debounce(() => {
+        showNav()
+    }, 50))
+}

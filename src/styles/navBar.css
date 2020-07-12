@@ -48,9 +48,9 @@ nav{
     left: 0px;
     background: linear-gradient(#d90814, #78100d);
     text-align: center;
-    transition: 0.5s ease;
     z-index: 100;
     max-width: 60%;
+    transition: 1s;
 }
 
 nav .burguer{
