@@ -82,7 +82,7 @@ ul li .graphicBar p:before{
 }
 
 /* Engranagem */
-.gearBackfround{
+.gearBackground{
     width: 50px;
     height: 40px;
     background: linear-gradient(to right,#d90814, #78100d);
@@ -91,16 +91,30 @@ ul li .graphicBar p:before{
     justify-content: center;
     border-radius: 4px;
     cursor: pointer;
+
+    position: absolute;
+    right: 10px;
+    z-index: 50;
+    transition: 0.5s ease-in-out;
 }
 
-.gearBackfround img{
-     width: 16px;
-     height: 16px;
+.gearBackground img{
+    width: 16px;
+    height: 16px;
+    align-self: center;
+    transition: 0.5s;
  }
 
- .gearBackfround:hover img{
-     animation: 2s animateGear infinite linear;
+.gearBackground:hover img{
+    animation: 2s animateGear infinite linear;
+    margin-left: 80%;
+    margin-bottom: 80%;
  }
+
+.gearBackground:hover{
+    width: 150px;
+    height: 150px;
+}
 
  @keyframes animateGear{
      0%{
@@ -137,6 +151,7 @@ ul li .graphicBar p:before{
     padding-top: 20px;
     padding-bottom: 20px;
     justify-content: space-between;
+    position: relative;
 }
 
 .containerHome .tableBar p{
@@ -144,10 +159,6 @@ ul li .graphicBar p:before{
     padding: 0px;
     font-size: 25px;
     align-self: center;
-}
-
-.containerHome .tableBar .gearBackfround img{
-    margin-top: 13px;
 }
 
 .containerHome .container{
