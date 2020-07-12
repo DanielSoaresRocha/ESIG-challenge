@@ -115,9 +115,7 @@ ul li .graphicBar p:before{
     width: 500px; 
     height: 400px; 
     position: absolute;
-    margin-top: 70px;
-    /*left: -70px;*/
-    
+    margin-top: 70px; 
     left: 50%;
     transform: translate(-50%, 0%);
 }
@@ -127,7 +125,6 @@ ul li .graphicBar p:before{
     height: 400px;
     position: absolute;
     margin-top: 70px;
-    /*left: -70px;*/
     left: 50%;
     transform: translate(-50%, 0%);
 }
