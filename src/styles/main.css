@@ -279,10 +279,10 @@ td span{
 }
 
 @media(max-width:930px){
-    .containerHome main .tableBar p{
+    .containerHome main .tableBar p:nth-child(1){
         font-size: 20px;
-        
     }
+
     .containerHome main .container:nth-child(3){
         width: 100%;
         overflow: scroll;
@@ -321,7 +321,7 @@ td span{
     .containerHome main{
         padding: 10px;
     }
-    .containerHome ul li p{
+    .containerHome ul li p:nth-child(1){
         font-size: 16px;
     }
 
