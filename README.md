@@ -6,7 +6,7 @@
 
 ## O que era para ser feito? 🤔
 
-O desafio era desenvolver o wireframe a baixo usando
+O desafio era desenvolver o wireframe abaixo usando
 HTML5, CSS e Bootstrap.<br /> <br />
 <strong>Prazo: 1 semana<strong>
 
