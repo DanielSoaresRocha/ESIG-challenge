@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/src/assets/laptop.svg" width="90px" float="center"/>
+  <img src="/screenshots/esig.png" width="90px" float="center"/>
 </p>
 
 <h1 align="center">ESIG challenge</h1>
