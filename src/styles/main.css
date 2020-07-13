@@ -65,14 +65,14 @@ ul li .graphicBar{
     justify-content: space-between;
 }
 
-ul li .graphicBar p{
+ul li .graphicBar p:nth-child(1){
     font-size: 25px;
     margin: 0px;
     padding: 0px;
     align-self: center;
 }
 
-ul li .graphicBar p:before{
+ul li .graphicBar p:nth-child(1):before{
     content: '';
     border: 1px solid gray;
     width: 160px;
@@ -90,11 +90,32 @@ ul li .graphicBar p:before{
     flex-direction: row;
     justify-content: center;
     border-radius: 4px;
-    cursor: pointer;
     position: absolute;
     right: 20px;
-    z-index: 50;
+    z-index: 10;
     transition: 0.5s ease-in-out;
+}
+
+.gearBackground .subMenu{
+    display: none;
+    align-self: flex-start;
+    position: absolute;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.gearBackground .subMenu span{
+    font-weight: bolder;
+}
+
+.gearBackground .subMenu p{
+    cursor: pointer;
+    width: max-content;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+
 }
 
 .gearBackground img{
@@ -104,15 +125,19 @@ ul li .graphicBar p:before{
     transition: 0.5s;
  }
 
-.gearBackground:hover img{
+.gearBackground:hover img {
     animation: 2s animateGear infinite linear;
     margin-left: 80%;
     margin-bottom: 80%;
  }
 
+ .gearBackground:hover .subMenu{
+     display: block;
+ }
+
 .gearBackground:hover{
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
 }
 
  @keyframes animateGear{
@@ -153,7 +178,7 @@ ul li .graphicBar p:before{
     position: relative;
 }
 
-.containerHome .tableBar p{
+.containerHome .tableBar p:nth-child(1){
     margin: 0px;
     padding: 0px;
     font-size: 25px;
