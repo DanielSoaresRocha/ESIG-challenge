@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/screenshots/esig.png" width="90px" float="center"/>
+  <img src="/screenshots/esig.png" width="200px" float="center"/>
 </p>
 
 <h1 align="center">ESIG challenge</h1>
@@ -7,12 +7,12 @@
 ## O que era para ser feito? 🤔
 
 O desafio era desenvolver o wireframe a baixo usando
-HTML5, CSS e Bootstrap.<br />
+HTML5, CSS e Bootstrap.<br /> <br />
 <strong>Prazo: 1 semana<strong>
 
 <div align="center">
   <br>
-    <img src="screenshots/wireframe.png" alt="Screenshot1" width="100%">
+    <img src="screenshots/wireframe.png" alt="Screenshot1" width="500px" heigth='500px'>
   <br>
 </div>
 
