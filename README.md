@@ -16,9 +16,10 @@ HTML5, CSS e Bootstrap.<br /> <br />
   <br>
 </div>
 
-## [Site](https://esig-challenge.vercel.app/) 💻 
+## O que foi desenvolvido? 🚀 
 
-Página web mostrando o desafio concluido
+Página web mostrando o desafio concluido.<br />
+Disponível [aqui](https://esig-challenge.vercel.app/)
 
 <div align="center">
   <br>
@@ -26,11 +27,18 @@ Página web mostrando o desafio concluido
   <br>
 </div>
 
+
+## Responsividade
+![git to demonstration](screenshots/responsividadeGif.gif)
+
+## Efeitos css
+
 ## Tecnologias usadas 📚
 - HTML5
 - CSS3
 - Bootstrap
 - JavaScript
+- Google charts (renderização dos gráficos)
 
 ## Desenvolvimento 🎬
 
