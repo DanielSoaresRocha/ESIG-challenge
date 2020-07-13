@@ -27,18 +27,18 @@ Disponível [aqui](https://esig-challenge.vercel.app/)
   <br>
 </div>
 
+## Animação 🎥
+![git to demonstration](screenshots/animacaoGif.gif)
 
-## Responsividade
+## Responsividade ⚖
 ![git to demonstration](screenshots/responsividadeGif.gif)
-
-## Efeitos css
 
 ## Tecnologias usadas 📚
 - HTML5
 - CSS3
 - Bootstrap
 - JavaScript
-- Google charts (renderização dos gráficos)
+- Google Charts (renderização dos gráficos)
 
 ## Desenvolvimento 🎬
 
