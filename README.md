@@ -12,7 +12,7 @@ HTML5, CSS e Bootstrap.<br /> <br />
 
 <div align="center">
   <br>
-    <img src="screenshots/wireframe.png" alt="Screenshot1" width="100%" heigth='500px'>
+    <img src="screenshots/wireframe.png" alt="Screenshot1" width="500px" heigth='500px'>
   <br>
 </div>
 
